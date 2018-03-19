@@ -1,0 +1,133 @@
+#isitengah
+{
+ margin-top: 100px;
+    padding-left: 200px;
+}
+#isi
+{
+    margin-top: 100px;
+    padding-left: 400px;
+
+}
+#tabelpesan
+{
+margin-left: 500px;
+}
+#kategori
+{
+    padding-right: 300px;
+}
+#gbox {
+    width: 431px;
+    margin-top: 47px;
+    margin-left: 22px;
+  }
+  
+  #gbox-bg  { background-color: lightsteelblue}
+  #gbox-grd {  }
+  #gbox-top {  }
+  #gbox-bot {  }
+  #gbox-grd {
+    min-height: 300px;
+    padding: 2px 24px;
+  }
+  
+  #gbox h2 {
+    font: bold 14px arial, sans-serif;
+    color: #000;
+    margin: 0;
+  }
+  
+  #gbox p {
+    margin: 1em 0;
+  }
+  
+  #features {
+    background: #EDF0C4;
+    padding: 14px;
+    margin: 0 -14px;
+  }
+  #features h2 {
+    position: relative;
+  }
+  #features ul {
+    float: left;
+    width: 49%;
+    margin: 1em 0;
+    padding: 0;
+  }
+  #features li {
+    list-style: square;
+    margin-left: 12px;
+  }
+  
+  /** footer **/
+  
+  #newsletter, #events {
+    float: left;
+    width: 49%;
+    margin-top: 1em;
+  }
+  #newsletter h2, #events h2 {
+    color: #fff;
+  }
+  #newsletter .text {
+    width: 125px;
+  }
+  #newsletter form {
+    margin: 0.3em 0 0.6em 0;
+  }
+  #newsletter p {
+    margin: 0.3em 0;
+    font-size: 10px;
+  }
+  #newsletter a {
+    color: #000;
+  }
+  
+  #events {
+    margin-left: 6%;
+    width: 38%;
+  }
+  #events ul {
+    margin: 0.3em 0;
+    padding: 0;
+  }
+  #events li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /** grey box **/
+  
+  #greybox {
+   background-color: lightskyblue;
+    width: 326px;
+    position: absolute;
+    top: 292px;
+    left: 457px;
+  }
+  #greybox-top {
+    background: url(images/grey_img.jpg) no-repeat;
+    padding-left: 165px;
+    padding-top: 18px;
+  }
+  #greybox-bot {
+    background: bottom left url(images/grey_bot.gif) no-repeat;
+    padding-bottom: 4px;
+  }
+  #greybox h2 {
+    font: bold 12px arial, sans-serif;
+    color: #E4EE6A;
+    line-height: 1.5;
+  }
+  #greybox a {
+    color: #fff;
+  }
+  
+  #copyright {
+    font-size: 9px;
+    color: #fff;
+    margin-top: 60px;
+  }  
