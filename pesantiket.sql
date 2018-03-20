@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 19, 2018 at 07:18 PM
+-- Generation Time: Mar 20, 2018 at 05:32 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -56,7 +56,9 @@ INSERT INTO `activations` (`id`, `user_id`, `code`, `completed`, `completed_at`,
 (11, 13, 'CtpOMiuLT0NgZYE2xdrue6jAwWSdimLJ', 1, '2018-03-19 10:32:12', '2018-03-19 10:32:12', '2018-03-19 10:32:12'),
 (12, 14, 'TuoSFucbck1yTZOJD85Rq7ccO7F7GL9Q', 1, '2018-03-19 10:32:13', '2018-03-19 10:32:13', '2018-03-19 10:32:13'),
 (13, 15, '1rLsoEF43ByaXSHSQ5sV3jzYNnZHiznh', 1, '2018-03-19 11:06:07', '2018-03-19 11:06:07', '2018-03-19 11:06:07'),
-(14, 16, 'KBs5n3yYNm3BB5cK9PHxF7OPYKyBUPRf', 1, '2018-03-19 11:15:15', '2018-03-19 11:15:15', '2018-03-19 11:15:15');
+(14, 16, 'KBs5n3yYNm3BB5cK9PHxF7OPYKyBUPRf', 1, '2018-03-19 11:15:15', '2018-03-19 11:15:15', '2018-03-19 11:15:15'),
+(15, 17, 'HWsw7naUBPv1Oi353mq57pgQT0B895aL', 1, '2018-03-19 20:33:16', '2018-03-19 20:33:16', '2018-03-19 20:33:16'),
+(16, 18, 'qzetWY9dOKcvcHPz0sgIthdvLQXGQ3Vw', 1, '2018-03-19 20:40:58', '2018-03-19 20:40:58', '2018-03-19 20:40:58');
 
 -- --------------------------------------------------------
 
@@ -78,7 +80,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_resets_table', 1),
 (3, '2018_03_18_133122_datatiket', 1),
-(4, '2014_07_02_230147_migration_cartalyst_sentinel', 2);
+(4, '2014_07_02_230147_migration_cartalyst_sentinel', 2),
+(5, '2018_03_20_040051_addtipe', 3);
 
 -- --------------------------------------------------------
 
@@ -126,7 +129,9 @@ INSERT INTO `persistences` (`id`, `user_id`, `code`, `created_at`, `updated_at`)
 (32, 13, '9AJRtWRfGoR855FHF6AHANnuev0yJ89t', '2018-03-19 10:49:51', '2018-03-19 10:49:51'),
 (33, 13, 'mxcSFrYR1rHFKCGdQdFNhmJL6VebxTzf', '2018-03-19 10:49:51', '2018-03-19 10:49:51'),
 (36, 14, 'fCHTA9Gtel1QxddaAOjs8eSbKoVAhIDG', '2018-03-19 10:57:53', '2018-03-19 10:57:53'),
-(41, 16, 'PSbj0LhPdwJPTZQaMSRWdQi3YSM8jqJY', '2018-03-19 11:17:46', '2018-03-19 11:17:46');
+(41, 16, 'PSbj0LhPdwJPTZQaMSRWdQi3YSM8jqJY', '2018-03-19 11:17:46', '2018-03-19 11:17:46'),
+(42, 17, '3mofMM55yezk5k2e4SYbjO7XdfyZrx1F', '2018-03-19 20:33:26', '2018-03-19 20:33:26'),
+(44, 18, '4HPtLif0dZRha5bijPm9PB9DECXt8551', '2018-03-19 20:50:26', '2018-03-19 20:50:26');
 
 -- --------------------------------------------------------
 
@@ -196,7 +201,9 @@ INSERT INTO `role_users` (`user_id`, `role_id`, `created_at`, `updated_at`) VALU
 (13, 5, '2018-03-19 10:32:13', '2018-03-19 10:32:13'),
 (14, 6, '2018-03-19 10:32:13', '2018-03-19 10:32:13'),
 (15, 6, '2018-03-19 11:06:07', '2018-03-19 11:06:07'),
-(16, 5, '2018-03-19 11:15:16', '2018-03-19 11:15:16');
+(16, 5, '2018-03-19 11:15:16', '2018-03-19 11:15:16'),
+(17, 6, '2018-03-19 20:33:16', '2018-03-19 20:33:16'),
+(18, 6, '2018-03-19 20:40:59', '2018-03-19 20:40:59');
 
 -- --------------------------------------------------------
 
@@ -222,7 +229,13 @@ INSERT INTO `throttle` (`id`, `user_id`, `type`, `ip`, `created_at`, `updated_at
 (2, NULL, 'ip', '127.0.0.1', '2018-03-19 10:20:10', '2018-03-19 10:20:10'),
 (3, NULL, 'global', NULL, '2018-03-19 11:14:15', '2018-03-19 11:14:15'),
 (4, NULL, 'ip', '127.0.0.1', '2018-03-19 11:14:15', '2018-03-19 11:14:15'),
-(5, 15, 'user', NULL, '2018-03-19 11:14:15', '2018-03-19 11:14:15');
+(5, 15, 'user', NULL, '2018-03-19 11:14:15', '2018-03-19 11:14:15'),
+(6, NULL, 'global', NULL, '2018-03-19 20:40:12', '2018-03-19 20:40:12'),
+(7, NULL, 'ip', '127.0.0.1', '2018-03-19 20:40:12', '2018-03-19 20:40:12'),
+(8, 17, 'user', NULL, '2018-03-19 20:40:12', '2018-03-19 20:40:12'),
+(9, NULL, 'global', NULL, '2018-03-19 20:40:32', '2018-03-19 20:40:32'),
+(10, NULL, 'ip', '127.0.0.1', '2018-03-19 20:40:32', '2018-03-19 20:40:32'),
+(11, 17, 'user', NULL, '2018-03-19 20:40:32', '2018-03-19 20:40:32');
 
 -- --------------------------------------------------------
 
@@ -240,21 +253,33 @@ CREATE TABLE `tikets` (
   `jumlahtiket` int(11) NOT NULL,
   `pembayaran` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `jenispembayaran` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tikets`
 --
 
-INSERT INTO `tikets` (`id`, `nomorkursi`, `nama_pemesan`, `jenis_kelamin`, `no_ktp`, `alamat`, `jumlahtiket`, `pembayaran`, `created_at`, `updated_at`) VALUES
-(1, 1, 'jack', 'Laki-laki', 13131313, 'asd', 1, 300000, '2018-03-19 07:45:31', '2018-03-19 08:58:32'),
-(6, 2, 'Jack Prize', 'Laki-laki', 213334411, 'asdadadad', 3, 200000, '2018-03-19 07:58:32', '2018-03-19 07:58:32'),
-(8, 4, 'Jack Prize', 'Laki-laki', 213334411, 'asdadadad', 3, 200000, '2018-03-19 07:58:32', '2018-03-19 07:58:32'),
-(9, 3, 'Iyez', 'Laki-laki', 13313113, 'adadadd', 1, 300000, '2018-03-19 09:01:28', '2018-03-19 09:01:28'),
-(10, 5, 'Oda', 'Laki-laki', 1123113, 'asdad', 1, 900000, '2018-03-19 11:04:27', '2018-03-19 11:04:27'),
-(11, 6, 'zephys', 'Laki-laki', 1122112, 'adadadadda', 1, 4000000, '2018-03-19 11:09:28', '2018-03-19 11:09:28'),
-(12, 7, 'zephys', 'Laki-laki', 1122112, 'adadadadadaadaddaad', 1, 300000, '2018-03-19 11:09:57', '2018-03-19 11:09:57');
+INSERT INTO `tikets` (`id`, `nomorkursi`, `nama_pemesan`, `jenis_kelamin`, `no_ktp`, `alamat`, `jumlahtiket`, `pembayaran`, `created_at`, `updated_at`, `jenispembayaran`) VALUES
+(1, 1, 'jack', 'Laki-laki', 13131313, 'asd', 1, 300000, '2018-03-19 07:45:31', '2018-03-19 08:58:32', ''),
+(6, 2, 'Jack Prize', 'Laki-laki', 213334411, 'asdadadad', 3, 200000, '2018-03-19 07:58:32', '2018-03-19 07:58:32', ''),
+(8, 4, 'Jack Prize', 'Laki-laki', 213334411, 'asdadadad', 3, 200000, '2018-03-19 07:58:32', '2018-03-19 07:58:32', ''),
+(9, 3, 'Iyez', 'Laki-laki', 13313113, 'adadadd', 1, 300000, '2018-03-19 09:01:28', '2018-03-19 09:01:28', ''),
+(10, 5, 'Oda', 'Laki-laki', 1123113, 'asdad', 1, 900000, '2018-03-19 11:04:27', '2018-03-19 11:04:27', ''),
+(11, 6, 'zephys', 'Laki-laki', 1122112, 'adadadadda', 1, 4000000, '2018-03-19 11:09:28', '2018-03-19 11:09:28', ''),
+(12, 7, 'zephys', 'Laki-laki', 1122112, 'adadadadadaadaddaad', 1, 300000, '2018-03-19 11:09:57', '2018-03-19 11:09:57', ''),
+(13, 8, 'michael', 'Laki-laki', 12311313, 'asa', 1, 200000, '2018-03-19 20:35:14', '2018-03-19 20:35:14', ''),
+(14, 9, 'michael', 'Laki-laki', 12121313, 'addad', 3, 300000, '2018-03-19 20:41:27', '2018-03-19 20:41:27', ''),
+(15, 10, 'michael', 'Laki-laki', 12121313, 'addad', 3, 300000, '2018-03-19 20:41:27', '2018-03-19 20:41:27', ''),
+(16, 11, 'michael', 'Laki-laki', 12121313, 'addad', 3, 300000, '2018-03-19 20:41:27', '2018-03-19 20:41:27', ''),
+(17, 12, 'michael', 'Laki-laki', 212122112, 'Jalan kebon jambu', 1, 60000, '2018-03-19 20:50:54', '2018-03-19 20:50:54', ''),
+(18, 13, 'michael', 'Laki-laki', 212122112, 'Jalan kebon jambu', 1, 60000, '2018-03-19 20:50:54', '2018-03-19 20:50:54', ''),
+(19, 14, 'michael', 'Laki-laki', 212122112, 'Jalan kebon jambu', 1, 60000, '2018-03-19 20:50:54', '2018-03-19 20:50:54', ''),
+(20, 15, 'michael', 'Laki-laki', 212122112, 'Jalan kebon jambu', 1, 60000, '2018-03-19 20:50:54', '2018-03-19 20:50:54', ''),
+(21, 16, 'asd', 'Laki-laki', 123313, 'asdadda', 1, 200000, '2018-03-19 21:25:03', '2018-03-19 21:25:03', 'Cash'),
+(22, 17, 'michael', 'Laki-laki', 12121121, 'asd', 1, 60000, '2018-03-19 21:25:46', '2018-03-19 21:25:46', ''),
+(23, 18, 'michael', 'Laki-laki', 12311331, 'assaddada', 1, 60000, '2018-03-19 21:28:53', '2018-03-19 21:28:53', 'ATM');
 
 -- --------------------------------------------------------
 
@@ -281,10 +306,12 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `email`, `password`, `permissions`, `last_login`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES
 (1, 'michaelandgobaw@gmail.com', '$2y$10$Fe57bOGABT6cHHWmHPPB4O51puHzDRuWnQSMiwb9Qnydfvm9ZSq3e', NULL, '2018-03-19 08:24:07', 'michael', 'pratama', '2018-03-18 07:54:05', '2018-03-19 08:24:07'),
 (2, 'michaelandsgobaw@gmail.com', '$2y$10$FFlGLutH7PxqMGuSbsn8geKQWq/1bYYKFOrh2ALwXFZevHPoY6dVa', NULL, NULL, 'michael', 'pratama', '2018-03-18 07:55:31', '2018-03-18 07:55:31'),
-(13, 'madmin@mail.com', '$2y$10$c3zlHuWP6uYd/HA.3AuRU.DxCM6cyhKMQrFYc0SHH6WOmpa3DtjjK', NULL, '2018-03-19 10:51:31', 'M', 'Admin', '2018-03-19 10:32:12', '2018-03-19 10:51:31'),
+(13, 'madmin@mail.com', '$2y$10$c3zlHuWP6uYd/HA.3AuRU.DxCM6cyhKMQrFYc0SHH6WOmpa3DtjjK', NULL, '2018-03-19 21:23:51', 'M', 'Admin', '2018-03-19 10:32:12', '2018-03-19 21:23:51'),
 (14, 'oda@e.com', '$2y$10$nodmKgkg6DMUtGoj5KHJSujQvZhYRE8Ug6kzBmJjMjzXCrczhUcE6', NULL, '2018-03-19 11:05:34', 'Oda', 'E', '2018-03-19 10:32:13', '2018-03-19 11:05:34'),
 (15, 'zep@gmail.com', '$2y$10$qDeddFH/nQV4nSrGZcQ37.aUhk8ifKQadtTkuljs6SjOJJqxaRk.u', NULL, '2018-03-19 11:14:29', 'zephys', 'zep', '2018-03-19 11:06:06', '2018-03-19 11:14:29'),
-(16, 'asd@gmail.com', '$2y$10$6ci1fmbGCtCHuqxQCrZSeezsze/zOZPqC3mq8H5gwXvjzhXce0BsG', NULL, '2018-03-19 11:17:46', 'asd', 'admin', '2018-03-19 11:15:15', '2018-03-19 11:17:46');
+(16, 'asd@gmail.com', '$2y$10$6ci1fmbGCtCHuqxQCrZSeezsze/zOZPqC3mq8H5gwXvjzhXce0BsG', NULL, '2018-03-19 11:17:46', 'asd', 'admin', '2018-03-19 11:15:15', '2018-03-19 11:17:46'),
+(17, 'michael.pratama@gmail.com', '$2y$10$GlnZB1mnV5H1c/8emgDquOg57xKVwk3BGZOJ8R6bHA/qJ/kMbXXZ.', NULL, '2018-03-19 20:33:26', 'michael', 'pratama', '2018-03-19 20:33:15', '2018-03-19 20:33:26'),
+(18, 'mich@gmail.com', '$2y$10$n66bxz2idApwI72WkEAM8uGg0qX5yQ18Jfj8I5YCN/2xcDsBCVyiO', NULL, '2018-03-19 21:25:27', 'michael', 'asd', '2018-03-19 20:40:58', '2018-03-19 21:25:27');
 
 --
 -- Indexes for dumped tables
@@ -356,19 +383,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `activations`
 --
 ALTER TABLE `activations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `persistences`
 --
 ALTER TABLE `persistences`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `reminders`
@@ -386,19 +413,19 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `throttle`
 --
 ALTER TABLE `throttle`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `tikets`
 --
 ALTER TABLE `tikets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
