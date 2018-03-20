@@ -97,6 +97,18 @@ Bayar &nbsp;&nbsp;&nbsp;&nbsp;
 {!! Form::text('pembayaran', null, array('size'=>14,'placeholder'=>'masukan jumlah pembayaran')) !!}	
 <br>
 <br>
+Jenis Pembayar &nbsp;&nbsp;&nbsp;&nbsp;
+{{ Form::select('jenispembayaran', [
+   '' => '--Pilih Jenis Pembayaran--',
+   'ATM' => 'Menggunakan Debit',
+   'Cash' => 'Pembayaran tunai']
+) }}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 @if(count($errors)>0)
 	 
 	     <ul>

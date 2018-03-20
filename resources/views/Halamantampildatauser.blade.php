@@ -81,7 +81,7 @@
           <th class="table-header-repeat line-left"><a href="">Alamat</a></th>
           <th class="table-header-repeat line-left"><a href="">Jumlah tiket</a></th>
           <th class="table-header-repeat line-left"><a href="">Pembayaran</a></th>
-				
+		  <th class="table-header-repeat line-left"><a href="">Metode Pembayaran</a></th>		
 				
                 </tr>
                 @foreach($tiket as $tampil)
@@ -95,6 +95,7 @@
                      <td>{!!$tampil->alamat!!}</td>
                      <td>{!!$tampil->jumlahtiket!!}</td>
                       <td>{!!$tampil->pembayaran!!}</td>
+					  <td>{!!$tampil->jenispembayaran!!}</td>
 					@endif
 			 
                 </tr>

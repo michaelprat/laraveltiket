@@ -81,6 +81,7 @@
           <th class="table-header-repeat line-left"><a href="">Alamat</a></th>
           <th class="table-header-repeat line-left"><a href="">Jumlah tiket</a></th>
           <th class="table-header-repeat line-left"><a href="">Pembayaran</a></th>
+		  <th class="table-header-repeat line-left"><a href="">Metode Pembayaran</a></th>
 					<th class="table-header-repeat line-left"><a href="">Edit</a></th>
 					<th  class="table-header-repeat line-left"><a href="">Delete</a></th>
 				
@@ -95,6 +96,7 @@
           <td>{!!$tampil->alamat!!}</td>
           <td>{!!$tampil->jumlahtiket!!}</td>
           <td>{!!$tampil->pembayaran!!}</td>
+		  <td>{!!$tampil->jenispembayaran!!}</td>
 					<td>{!! link_to(route('Addadmin.edit',$tampil->id),'Edit') !!}</td>
 					<td>{!! Form::open(array('route'=>array('Addadmin.destroy',$tampil->id),'method'=>'delete')) !!}
 					    {!! Form::submit('Delete',array("onclick"=>"return confirm('are you sure?')")) !!}

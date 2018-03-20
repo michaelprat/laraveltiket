@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class tiket extends Model
 {
-    protected $fillable=['nomorkursi','nama_pemesan','jenis_kelamin','no_ktp','alamat','jumlahtiket','pembayaran'];
+    protected $fillable=['nomorkursi','nama_pemesan','jenis_kelamin','no_ktp','alamat','jumlahtiket','pembayaran','jenispembayaran'];
     protected $primarykey='id';
 }

@@ -53,7 +53,7 @@ class tambahuser extends Controller
                   'alamat'=>'required|max:255|min:1',
                   'jumlah'=>'required|integer|min:1',
                   'pembayaran'=>'required|integer',
-                  
+                  'jenispembayaran'=>'required|min:1|max:255',
                    
                 
         ]);
@@ -82,6 +82,8 @@ class tambahuser extends Controller
                 $nomorkursi=$nomorkursi+1;
             }
           }
+          $hargabayar=60000;
+         
           $tiket=new tiket;
           $tiket->nama_pemesan=$request->nama_pemesan;
           $tiket->nomorkursi=$nomorkursi;
@@ -90,6 +92,7 @@ class tambahuser extends Controller
           $tiket->alamat=$request->alamat;
           $tiket->jumlahtiket=$jumlah;
           $tiket->pembayaran=$hargabayar;
+          $tiket->jenispembayaran=$request->jenispembayaran;
           $tiket->save();
           return redirect()->route("Viewuser.index");
          }
@@ -97,12 +100,7 @@ class tambahuser extends Controller
          {  
              $valid=0;
              $berulang=$jumlah+1;
-             $tiket=new tiket;
-             $tiket->nama_pemesan=$request->nama_pemesan;
-             $tiket->no_ktp=$request->no_ktp;
-             $tiket->alamat=$request->alamat;
-             $tiket->jumlahtiket=$jumlah;
-              $tiket->pembayaran=$hargabayar;
+          
               for($x=1;$x<$berulang;$x++)
               {
                   $valid=1;
@@ -126,6 +124,7 @@ class tambahuser extends Controller
                     $tiket->alamat=$request->alamat;
                     $tiket->jumlahtiket= $jumlahtik;
                     $tiket->pembayaran=$hargabayar;
+                    $tiket->jenispembayaran=$request->jenispembayaran;
                     $tiket->save();
           
                 }

@@ -52,6 +52,7 @@ class tambahadmin extends Controller
                   'alamat'=>'required|max:255|min:1',
                   'jumlah'=>'required|integer|min:1',
                   'pembayaran'=>'required|integer',
+                  'jenispembayaran'=>'required|min:1|max:255',
                   
                    
                 
@@ -87,6 +88,7 @@ class tambahadmin extends Controller
           $tiket->jenis_kelamin=$request->jenis_kelamin;
           $tiket->no_ktp=$request->no_ktp;
           $tiket->alamat=$request->alamat;
+          $tiket->jenispembayaran=$request->jenispembayaran;
           $tiket->jumlahtiket=$jumlah;
           $tiket->pembayaran=$hargabayar;
           $tiket->save();
@@ -125,6 +127,7 @@ class tambahadmin extends Controller
                     $tiket->alamat=$request->alamat;
                     $tiket->jumlahtiket=$jumlahtik;
                     $tiket->pembayaran=$hargabayar;
+                    $tiket->jenispembayaran=$request->jenispembayaran;
                     $tiket->save();
           
                 }
