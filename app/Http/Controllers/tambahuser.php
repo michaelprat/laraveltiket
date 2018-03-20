@@ -116,13 +116,15 @@ class tambahuser extends Controller
                 }
                 if($valid==1)
                 {
+                    $hargabayar=60000;
+                    $jumlahtik=1;
                     $tiket=new tiket;
                     $tiket->nama_pemesan=$request->nama_pemesan;
                     $tiket->nomorkursi=$x;
                     $tiket->jenis_kelamin=$request->jenis_kelamin;
                     $tiket->no_ktp=$request->no_ktp;
                     $tiket->alamat=$request->alamat;
-                    $tiket->jumlahtiket=$jumlah;
+                    $tiket->jumlahtiket= $jumlahtik;
                     $tiket->pembayaran=$hargabayar;
                     $tiket->save();
           
