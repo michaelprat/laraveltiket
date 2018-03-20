@@ -131,8 +131,9 @@ class tambahuser extends Controller
                 {
 
                 }
-                return redirect()->route("Viewuser.index");
+              
               }
+              return redirect()->route("Viewuser.index");
          }
         }
     }

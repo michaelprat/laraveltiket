@@ -130,8 +130,9 @@ class tambahadmin extends Controller
                 {
 
                 }
-                return redirect()->route("Viewadmin.index");
+               
               }
+              return redirect()->route("Viewadmin.index");
          }
         }
         
